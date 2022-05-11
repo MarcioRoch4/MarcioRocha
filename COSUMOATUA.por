@@ -16,7 +16,7 @@ programa
           
 		Velocidade = Tempo * Distancia
 		
-		escreva("A Velocidade média " ,Distancia, " KM/H,")
+		escreva("A Velocidade média " ,Velocidade, " KM/H,")
 		
 		Consumo = Distancia / KM_Litro
           Preco =  ( Distancia / KM_Litro ) * Gasolina
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 373; 
+ * @POSICAO-CURSOR = 182; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
