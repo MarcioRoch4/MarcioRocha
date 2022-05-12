@@ -3,18 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		real Tempo, VeloMedia, Distancia, Consumo, KM_Litro, Preco, Gasolina, Velocidade
+		real Tempo, VeloMedia, Distancia, Consumo, KM_Litro, Preco, Gasolina, Velocidade, Horas, VM
            
            Gasolina = 6.67   
            KM_Litro = 16
+           Tempo = 60
 
           escreva("Informe a distancia pecorrida de maceió e arapiraca?")
           leia(Distancia)
 
 		escreva("Informe o tempo gasto na viagem em horas? ")
-		leia(Tempo)
-          
-		Velocidade = Tempo * Distancia
+		leia(Horas)
+
+          VM =  Horas * Tempo
+		Velocidade = VM / Distancia
 		
 		escreva("A Velocidade média " ,Velocidade, " KM/H,")
 		
@@ -32,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 182; 
+ * @POSICAO-CURSOR = 412; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
