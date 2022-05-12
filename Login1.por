@@ -7,13 +7,19 @@ programa
 	                           // 11/05/2022
 	                           // TOP SECRET
 	                           
-	   cadeia login, senha, login1, senha1                         
-	   inteiro n1, n2, somas
+	   cadeia login, senha                         
+	   inteiro n=0, s1, s2, somas, verificacao
+
+	   
 	  
-	   n1=Util.sorteia (1,19)
-	   n2=Util.sorteia (20,30)
-	   escreva(n1,"\n")
-	   escreva(n2,"\n")
+	 
+	   
+	   enquanto (n<3) {
+
+	   	 s1=Util.sorteia (1,19)                   //SORTEIO DO PRIMEIRO NUMERO
+	   s2=Util.sorteia (20,30)                  //SORTEIO DO SEGUNDO NUMERO
+	   	
+	   n++
 
         escreva("Qual o seu login? \n")
         leia(login)
@@ -23,32 +29,27 @@ programa
 
         escreva ("Verificando Login e Senha  \n")
         escreva ("Aguarde \n")
+        
+        somas= s1 + s2                                     // SOMA DOS NUMEROS SORTEADOS
+                
+              escreva("Digite a soma= " ,s1,"+",s2, " \n")
+              leia(verificacao)
 
-       se (login=="marcio" e senha=="0102"){
-           escreva("Logado com sucesso \n")
+       se (login=="marcio" e senha=="0102" e somas==verificacao){
+           
  
-            somas= n1 + n2
-              escreva("codigo de verificação ",somas,"\n")
+            
+              escreva("Logado com sucesso \n")
+              pare
               
        }senao{ 
      
              escreva("Cliente invalido \n")}
 
 
-             login1= "marcio"
-             senha1= "0102"
+             
 	
 	
-	enquanto  (login!=login1 e senha!=senha1){ 
-	        escreva("Cliente inválido \n")
-	        
-	        se (login=="marcio" e senha=="0102")
-	        pare
-	        
-	        escreva("Qual o seu login? \n")
-	        leia(login)
-	        escreva("Qual a sua senha? \n")
-             leia(senha)
 
 
         
@@ -64,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1132; 
+ * @POSICAO-CURSOR = 882; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
