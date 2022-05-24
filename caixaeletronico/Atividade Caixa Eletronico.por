@@ -31,8 +31,13 @@ programa
 	{
 		// alterações devem ser feitas aqui
 		notas_50 = valor_saque / 50 // siga esta ideia para programar as duas linhas abaixo
-		notas_20 = 0
-		notas_10 = 0
+		  valor_saque = valor_saque - (notas_50 * 50)
+		  
+		notas_20 = valor_saque / 20
+		  valor_saque = valor_saque - (notas_20 * 20)
+		  
+		notas_10 = valor_saque / 10
+		  valor_saque = valor_saque - (notas_10 * 10)
 	}
 
 
@@ -177,7 +182,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 584; 
+ * @POSICAO-CURSOR = 704; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
