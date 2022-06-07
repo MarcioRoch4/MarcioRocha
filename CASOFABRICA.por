@@ -7,6 +7,7 @@ programa
                      real n,nt,a,totalm1,totalm2,totalm3,totalf1,totalf2,totalf3,n1,n2,n3,n4,n5,n6
                      real totalma,totalmb,totalmc,totalfa,totalfb,totalfc
                      caracter s,b
+                     inteiro opt
 
                                         // Seção de Comandos
       nt = 0
@@ -26,19 +27,19 @@ programa
    
    nt = nt+n
    a = 1
-   a = a+1
+   a = (a+1)
    
-         caso: 1 (n>0)e(n<=20) faca
+         caso(opt) 1 (n>0)ou(n<=20) faca
       
       soma1 = m
       escreva("salàrio total: R$",soma1)
    
-         caso: 2 (n>20)e (n<=35) faca
+         caso(opt) 2 (n>20)ou (n<=35) faca
       
       soma2 = ((n-30)*(0.03*m)+m)
       escreva("salàrio total: R$",soma2)
    
-         caso = 3 (n>35) faca
+         caso(opt) 3 (n>35) faca
       
       soma3 = ((n-30)*(0.05*m)+m)
       escreva("salàrio total: R$",soma3)
@@ -124,7 +125,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3368; 
+ * @POSICAO-CURSOR = 815; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
