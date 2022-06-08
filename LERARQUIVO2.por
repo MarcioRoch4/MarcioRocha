@@ -18,10 +18,14 @@ programa
 		{ 
 			inteiro arquivo_placar = a.abrir_arquivo(arquivo_selecionado, a.MODO_LEITURA)
 
+     enquanto (nao a.fim_arquivo(arquivo_placar)){
+     	
+     
 			numero_da_linha = numero_da_linha + 1
 		     linha = a.ler_linha(arquivo_placar)
 							
 							escreva("Linha ", numero_da_linha, ": ", linha, "\n")	
+     }
 
 								a.fechar_arquivo(arquivo_placar)
 		}
@@ -40,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 789; 
+ * @POSICAO-CURSOR = 729; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
