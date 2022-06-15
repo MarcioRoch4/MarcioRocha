@@ -29,17 +29,26 @@ programa
    a = 1
    a = (a+1)
    
-         caso(opt) 1 (n>0)ou(n<=20) faca
+        escolha (opt){
+        
+        caso 1: 
+        
+        (n>0)ou(n<=20) faca
       
-      soma1 = m
-      escreva("salàrio total: R$",soma1)
+        soma1 = m
+        
+     escreva("salàrio total: R$",soma1)}
    
-         caso(opt) 2 (n>20)ou (n<=35) faca
+         caso 2:
+         
+         (n>20) ou (n<=35) faca
       
       soma2 = ((n-30)*(0.03*m)+m)
       escreva("salàrio total: R$",soma2)
    
-         caso(opt) 3 (n>35) faca
+         caso 3:
+         
+         (n>35) faca
       
       soma3 = ((n-30)*(0.05*m)+m)
       escreva("salàrio total: R$",soma3)
@@ -54,19 +63,19 @@ programa
    totalfb = totalfb+1
 
    
-   se (s="M")e (n>0) e (n<=30) entao
+   se (s="M")e (n>0) e (n<=30) faca
       totalma =1
       n1 = n
       totalm1 = n1+totalm1
       
    senao
-      se (s="M") e (n>30) e (n<=35) entao
+      se (s="M") e (n>30) e (n<=35) faca
          totalmb = 1
          n2 = n
          totalm2 = totalm2+n2
          
       senao
-         se (s="M") e (n>35) entao
+         se (s="M") e (n>35) faca
             totalmc = 1
             n3 = n
             totalm3 = totalm3+n3
@@ -125,7 +134,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 815; 
+ * @POSICAO-CURSOR = 932; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
